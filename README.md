@@ -4,7 +4,6 @@ Download the given python file
 
 Open the terminal or command prompt and make sure you are in the proper directory to run the following commands 
 
-Make sure you are in the proper directory
 # Install Orchestral-ai if not installed 
 pip install orchestral-ai
 # Install Streamlit if not installed 
