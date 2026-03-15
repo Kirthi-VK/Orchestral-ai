@@ -12,3 +12,4 @@ pip install streamlit
 python -m streamlit run smart_travel_planner_app.py
 
 This will redirect to the app created with the simple user interface.
+
