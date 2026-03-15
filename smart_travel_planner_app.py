@@ -1,5 +1,5 @@
 import streamlit as st
-# from orchestral_ai import OrchestralAI
+from orchestral_ai import TravelPlannerOrchestrator
 
 class DestinationAgent:
     def suggest_destination(self, trip_type):
@@ -54,10 +54,7 @@ class ReviewAgent:
         if not feedback:
             feedback.append("Plan looks great!")
         return feedback
-
-# -----------------------------
-# ORCHESTRATOR
-# -----------------------------
+        
 
 class TravelPlannerOrchestrator:
     def __init__(self):
@@ -79,15 +76,12 @@ class TravelPlannerOrchestrator:
             "feedback": feedback
         }
 
-# -----------------------------
-# STREAMLIT APP
-# -----------------------------
+#Streamlit
 
 st.set_page_config(page_title="Smart Travel Planner", layout="centered")
 st.title("Smart Travel Planner")
 st.write("Demo: Multi-Agent Orchestration in action!")
 
-# User Inputs
 trip_type = st.selectbox("Select trip type:", ["beach", "mountains", "city"])
 budget = st.number_input("Enter your budget ($):", min_value=50, max_value=1000, value=300, step=50)
 
